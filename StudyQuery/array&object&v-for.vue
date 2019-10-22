@@ -21,9 +21,9 @@
        <tr v-for="itemtest in items1.testcontent"><td>{{itemtest}}</td></tr>
         <h4>direct writing item1.testcontent</h4>
        <tr><td>{{items1.testcontent}}</td></tr>
-       <!-- <td>{{want to get its title throught items.testcontent with  objct  }}</td> -->
-      
-       <tr v-for="itemtest in items1.testcontent"><td>{{itemtest.value}}</td></tr>
+      <!-- <td>{{want to get its title name and value throught items.testcontent with  objct  }}</td> -->
+        <h4>get its title name and value throught items.testcontent with  objct</h4>
+       <tr v-for="(value,name,index) in items1.testcontent"><td>{{index}}</td><td>{{name}}</td><td>{{value}}</td></tr>
    </table>
       
       <!-- in array -->
