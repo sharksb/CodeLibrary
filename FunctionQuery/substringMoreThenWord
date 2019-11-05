@@ -1,0 +1,8 @@
+//标签字数
+function titleNum(val) {
+    if (val.length > 20) {
+        return val.substring(0, 20) + '...'
+    } else {
+        return val
+    }
+}
